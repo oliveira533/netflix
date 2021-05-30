@@ -1,0 +1,107 @@
+:root{
+    --cVerde: #00ad00;
+    --cPreto: #000701;
+}
+
+* {
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/*elemento base*/
+
+body{
+    background-color: var(--cPreto);
+    font-family: sans-serif;
+    color: #fff;
+    margin-left: 5px;
+}
+
+.cabecalho{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo {
+    color: var(--cVerde);
+    font-size: 40px;
+    font-family: 'Arial Black';
+    margin-left: 5px;
+}
+header nav a {
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+header nav a:hover {
+    color: #fff;
+}
+
+/* filme pricipal*/
+
+.mainMovie{
+    font-size: 15px;
+
+    background-image:linear-gradient(#00000078, #00000078 100%), url(/img/bigbangtheory2.jpg);
+    height: 400px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.mainMovie .descricao {
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.title {
+    margin-top: 15%;
+    font-size: 30px;
+}
+.botao {
+    background: #00000055;
+    border: none;
+    color: #fff;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+
+    cursor: pointer;
+    transition: 1s ease all;
+}
+.botao:hover {
+    background: #ffffffc2;
+    color: black;
+}
+i {
+    margin-right: 5px;
+}
+.container
+{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.mainMovie .container {
+    width: 60%;
+}
+
+.boxFilme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+.series-recomendadas {
+    background: #00000075;
+}
+.title-desc {
+    width: 100%;
+    background: #000000ab;
+
+    font-size: 15px;
+    margin-top: 5px;
+}
